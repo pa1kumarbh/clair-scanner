@@ -7,12 +7,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/coreos/clair/api/v1"
+	"github.com/coreos/clair/api/v3"
 )
 
 const (
-	postLayerURI        = "/v1/layers"
-	getLayerFeaturesURI = "/v1/layers/%s?vulnerabilities"
+	postLayerURI        = "/v3/layers"
+	getLayerFeaturesURI = "/v3/layers/%s?vulnerabilities"
 )
 
 type vulnerabilityInfo struct {
